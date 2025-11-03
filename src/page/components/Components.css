@@ -1,0 +1,67 @@
+.components-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.components-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.components-header h1 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.components-header p {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+}
+
+.components-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.component-card {
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.component-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+.component-icon {
+  font-size: 48px;
+  margin-bottom: var(--spacing-md);
+}
+
+.component-name {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.component-description {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.component-link {
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.component-card:hover .component-link {
+  color: var(--primary-hover);
+}

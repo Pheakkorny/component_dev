@@ -1,0 +1,65 @@
+.component-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+}
+
+.component-sidebar {
+  position: sticky;
+  top: 80px;
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.sidebar-link {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  display: block;
+}
+
+.sidebar-link:hover {
+  background-color: var(--bg-primary);
+  color: var(--primary-color);
+}
+
+.sidebar-link-active {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.sidebar-link-active:hover {
+  color: var(--text-light);
+}
+
+.component-content {
+  min-height: 600px;
+}
+
+@media (max-width: 768px) {
+  .component-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .component-sidebar {
+    position: static;
+  }
+}
