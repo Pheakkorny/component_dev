@@ -1,2 +1,1 @@
-# component_dev
-Building and testing component component.
+git component development 
